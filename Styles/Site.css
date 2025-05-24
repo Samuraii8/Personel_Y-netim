@@ -1,0 +1,169 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5dc; 
+    color: #333;
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#header {
+    background-color: #001f3f; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;    
+    font-weight: bold;
+}
+
+
+#menu {
+    background-color: #003366; 
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+    #menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+
+        #menu a:hover {
+            color: #f5f5dc; 
+        }
+
+
+#content {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+
+#footer {
+    background-color: #001f3f;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+    #footer p {
+        font-size: 0.9rem;
+    }
+
+
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #001f3f; 
+}
+
+
+.personnel-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.personnel-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .personnel-card:hover {
+        transform: scale(1.02);
+    }
+
+ 
+    .personnel-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover; 
+    }
+
+
+.card-info {
+    padding: 15px;
+    text-align: center;
+}
+
+    .card-info h3 {
+        margin-bottom: 10px;
+        color: #001f3f;
+    }
+
+    .card-info p {
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+
+.card-actions a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #003366; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .card-actions a:hover {
+        background-color: #001f3f;
+    }
+
+ 
+.add-new-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .add-new-btn:hover {
+        background-color: #001f3f;
+        cursor: pointer;
+    }

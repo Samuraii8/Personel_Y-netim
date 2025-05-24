@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PERSO.MasterPages.Site" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %></title>
+    <link rel="stylesheet" type="text/css" href="~/Styles/Site.css" />
+    <link rel="stylesheet" type="text/css" href="~/Styles/AnaSayfa.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div class="wrapper">
+            <div id="header">
+                <h1>Personel Yönetim Sistemi</h1>
+            </div>
+            <div id="menu">
+                <a href="Default.aspx">Anasayfa</a>
+                <a href="Add.aspx">Yeni Personel Ekle</a>
+                <a href="AnaSayfa.aspx">Resim Galerisi</a>
+            </div>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+                <p>Memonun personel yönetimi felan</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
